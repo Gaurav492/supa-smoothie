@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import Update from "./pages/Update";
+import FileUpload from "./pages/FileUpload";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/upload" element={<FileUpload />} />
           <Route path="/:id" element={<Update />} />
         </Routes>
       </BrowserRouter>
